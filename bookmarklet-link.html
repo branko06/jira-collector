@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            body {background-color: lightgray;}
+            div#title {
+                font-size: 2em;
+                align-content: center;
+                text-align: center;
+                width: 100%;
+                color: darkslategrey;
+                font-family: 'Sans-serif';
+                padding: 50px;
+            }
+            div#description {
+                width: 80%;
+                align-content: center;
+                text-align: center;
+                padding: 0px 10%;
+            }
+            div#links {
+                width: 80%;
+                align-content: center;
+                text-align: left;
+                padding: 50px 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="title"><span>New Collect JIRA Bookmarklet<br/></span></div>
+        <div id="description">
+            <p>
+                Below link is bookmarklet link that you should add/drag to bookmarks in order to install it as bookmarklet. Prerequisite is that this bookmarklet must be run on while you are on JIRA page. When run, dialog will pop-up, asking for start date of the worklogs you wish to export. Expected format is provided as default value in the prompt dialog, and this is "yyyy-mm-dd" (i.e. "2016-11-22", entered wihtout quotes, of course). After providing start date, another prompt dialog will popup asking for end date. Same rules apply, for second dialog as for the first one. After both dates are provided, dialog should popup with exported data in format that is expected from previously used Submit DR bookmarklet. Copy this exported text and paste it in the dialog that pops up from Submit DR dialog. You already know all this :D. Have fun!
+            </p>
+        </div>
+        <div id="links">
+            <a href="javascript:(function(){var url='https://cdn.rawgit.com/branko06/a83a3780270b935e6216149e3da2c1a1/raw/091ea4b733a708cd1d61b4303dcadf9fb103fe82/jira-collector.js?bla='.concat(Math.random());var script=document.createElement('script');script.src=url;script.onload=function(){JTSGWL.loadWorklogsForCurrentUser()};document.body.appendChild(script)})(); ">Collect JIRA Worklogs from timesheet plugin</a>
+        </div>
+    </body>
+</html>
